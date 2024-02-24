@@ -184,7 +184,7 @@ nav {
 }
 
 .topmenu>li {
-    padding: .1%;
+    padding: 1% 2%;
     width: 11%;
     float: left;
     position: relative;
@@ -199,9 +199,7 @@ nav {
     font-size: 14px;
     font-weight: bold;
     color: #f3f3f3;
-    padding: 15px 30px;
 }
-
 
 .submenu-link>svg{
     height: 1em;
@@ -482,8 +480,8 @@ nav {
     position: absolute;
     right: 0;
     transform: rotate(2deg);
-    border-radius: 75px;
-    width: 690px;
+    border-radius: 32px;
+    width: 47.9%;
     aspect-ratio: 726 / 553;
     background-image: linear-gradient(to top, #1fa038, #28cc28);
 }
@@ -495,7 +493,7 @@ nav {
     aspect-ratio: 729 / 550;
     object-fit: contain;
     border-radius: 32px;
-    width: 720px;
+    width: 50%;
     background-repeat: no-repeat;
     background-image: url('../img/teachers/rus.png');
 }
@@ -1020,6 +1018,50 @@ swiper-slide>p:nth-of-type(2) {
     color: #337cbd;
 }
 
+/*left panel*/
+
+.left_menu{
+    background-color: green;
+    width: max-content;
+}
+
+.left_menu>span>input{
+    padding: 14px 190px 14px 28px;
+    border-radius: 8px;
+    border: solid 2px #5fd45f;
+    background-color: #fff;
+}
+
+.left_menu>span{
+    position: relative;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 1%;
+      margin: auto 0;
+      width: 30px;
+      height: 30px;
+      background: url('https://cdn.zeplin.io/65be4a7bd3d6b84bdc44d5e5/assets/326ED4A1-4BA8-4E47-9DED-9AD0C2CA6963.svg') no-repeat;
+      background-size: cover;
+    }
+}
+.left_menu p{
+    padding-left: 4%;
+    font-family: Manrope;
+    font-size: 16px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.5;
+    letter-spacing: normal;
+    color: #fff;
+}
+
+.left_menu p:hover{
+    background-color: lightgreen;
+}
 /*fooooooooooooooooooooooooter*/
 
 footer {
