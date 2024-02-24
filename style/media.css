@@ -1,5 +1,10 @@
 /* hovers */
 
+:root {
+    --coefficient-first: 0;
+    --coefficient-second: 0px;
+}
+
 @media (hover: hover) {
 
     .for_enrollee2024>div:hover,
@@ -19,9 +24,14 @@
         transform: scaleY(1);
     }
 
-    .wrapper>span>button:hover {
+    .wrapper>span>button:hover:not(button:nth-child(4)) {
         color: #fff;
         background-color: #1db248;
+    }
+
+    .wrapper>span>button:hover:nth-child(4), .more:hover {
+        outline: 2px solid #337cbd;
+        outline-offset: -1.5px;
     }
 
     footer>div>span:nth-of-type(4) button:hover {
@@ -30,7 +40,7 @@
     }
 
     .social_bunner>span:nth-of-type(1)>div:hover{
-        cursor: s;
+        cursor: pointer;
         color: #c5c5c5;
     }
 }
@@ -51,16 +61,20 @@
 
     .topmenu>li:active .submenu {
         opacity: 1;
-        /*????????????????*/
+        /*not work*/
         transform: scaleY(1);
     }
 
 
-    .wrapper>span>button:active {
+    .wrapper>span>button:active:not(button:nth-child(4)) {
         color: #fff;
         background-color: #1db248;
     }
 
+    .wrapper>span>button:active:nth-child(4), .more:active{
+        outline: 2px solid #337cbd;
+        outline-offset: -1.5px;
+    }
     footer>div>span:nth-of-type(4) button:active {
         background-color: #3c464d;
         border: 0;
@@ -69,5 +83,52 @@
     .social_bunner>span:nth-of-type(1)>div:active{
         color: #c5c5c5;
     }
+
+}
+
+
+
+/*ADAPTIVE*/    
+
+@media (max-width: 1400px){
+
+}
+
+@media (max-width: 1200px){
+
+}
+
+@media (max-width: 900px){
+.for_enrollee2024{
+    flex-direction: column;
+}
+
+.column{
+    width: 100%;
+    padding-inline: 1% ;
+}
+footer>div>span{
+    margin-bottom: 4%;
+}
+}
+
+/* Small Devices, Tablets */
+
+@media (max-width: 768px) {
+    :root{
+        --coefficient-first: 0.7;
+        --coefficient-second: 320px;
+}
+}
+
+/* Extra Small Devices, Phones */
+
+@media (max-width: 480px) {
+
+}
+
+/* Custom, iPhone Retina */
+
+@media (max-width: 415px) {
 
 }

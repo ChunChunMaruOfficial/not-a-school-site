@@ -1,286 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-}
 
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-    display: block;
-}
-
-ol,
-ul {
-    list-style: none;
-}
-
-blockquote,
-q {
-    quotes: none;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-    content: '';
-    content: none;
-}
-
-button:hover {
-    cursor: pointer;
-}
-
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
-
-:root {
-    --coefficient-first: 0;
-    --coefficient-second: 0px;
-}
-
-/*reset end*/
-
-body {
-    width: 100vw;
-    background: #f2f2f2;
-    line-height: 1;
-}
-
-header {
-    background: #1db248;
-    text-align: center;
-}
-
-header a {
-    display: block;
-    text-decoration: none;
-    outline: none;
-    transition: .3s ease-in-out;
-}
-
-.most_top {
-    position: relative;
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    width: 100%;
-    height: 36px;
-    background-color: #1c3343;
-}
-
-.most_top img {
-    height: 1em;
-}
-
-.most_top>span {
-    position: absolute;
-    right: 6%;
-    gap: 8%;
-    display: flex;
-}
-
-.most_top p {
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    text-wrap: nowrap;
-    font-family: Manrope;
-    font-size: 16px;
-    font-weight: bold;
-    line-height: 100%;
-    color: #fff;
-}
-
-/**************************************/
-
-.logo_container {
-    padding-block: 1%;
-    padding-left: 10%;
-    width: 90%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    background-color: #f3f3f3;
-    align-items: center;
-    position: relative;
-}
-
-#logo {
-    background-image: url('../img/main_logo.png');
-    background-size: 100%;
-    width: 9.1%;
-    aspect-ratio: 1/1;
-    border-radius: 100%;
-    outline: 3px solid #1fa038;
-    outline-offset: -2px;
-}
-
-.logo_container>div:nth-of-type(2)>p:first-of-type {
-    font-family: Manrope;
-    font-size: calc(8px + (8 + 8 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1440));
-    color: #374653;
-}
-
-.logo_container>div:nth-of-type(2)>p {
-    font-family: Manrope;
-    font-size: calc(14px + (18 + 18 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1440));
-    font-weight: 800;
-    color: #000;
-}
-
-.logo_container>div:nth-of-type(2) {
-    margin-left: 2%;
-    text-align: left;
-}
-
-.logo_container>div:nth-of-type(3) {
-    font-family: Manrope;
-    font-size: calc(8px + (7 + 7 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1440));
-    font-weight: 500;
-    line-height: 1.5;
-    text-align: right;
-    color: #000;
-}
-
-.logo_container>div:nth-of-type(3) {
-    position: absolute;
-    right: 10%;
-}
-
-/**************************************/
-
-nav {
-    width: 83%;
-    display: table;
-    margin: 0 auto;
-}
-
-.topmenu{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.topmenu>li:first-of-type {
-    background-color: #067225;
-}
-
-.topmenu>li {
-    padding: 1% 2%;
-    width: 11%;
-    float: left;
-    position: relative;
-    font-family: 'Open Sans', sans-serif;
-}
-
-.topmenu>li>a {
-    display: flex;
-    justify-content: center;
-    text-transform: uppercase;
-    text-wrap: nowrap;
-    font-size: 14px;
-    font-weight: bold;
-    color: #f3f3f3;
-}
-
-.submenu-link>svg{
-    height: 1em;
-}
-
-.submenu {
-    background: #1db248;
-    position: absolute;
-    left: 0;
-    top: 100%;
-    z-index: 5;
-    width: 180px;
-    opacity: 0;
-    transform: scaleY(0);
-    transform-origin: 0 0;
-    transition: .5s ease-in-out;
-}
-
-.submenu a {
-    color: white;
-    text-align: left;
-    padding: 12px 15px;
-    font-size: 13px;
-    border-bottom: 1px solid rgba(255, 255, 255, .1);
-}
-
-.submenu li:last-child a {
-    border-bottom: none;
-}
-
-.main_bunner {
-    justify-content: center;
-    flex-direction: column;
-    display: flex;
-    aspect-ratio: 1680 / 560;
-    background-color: #00acbd;
-}
-
-.main_bunner p {
-    margin-left: 10%;
-}
-
-.main_bunner p:nth-of-type(1) {
-    border-radius: 5px 5px 0px 0px;
-}
-
-.main_bunner p:nth-of-type(2) {
-    border-radius: 0px 0px 5px 5px;
-    margin-bottom: 1.5%;
-}
-
-.main_bunner p:nth-of-type(1),
-.main_bunner p:nth-of-type(2) {
-    width: max-content;
-    font-family: Manrope;
-    padding: .4%;
-    font-size: calc(16px + (14 + 14 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1440));
-    font-weight: bold;
-    color: #000;
-    background-color: #fff;
-    text-wrap: nowrap;
-
-}
-
-.main_bunner p:nth-of-type(3) {
-    margin-bottom: 1.5%;
-    width: 40%;
-    font-family: Manrope;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 1.6;
-    color: #fff;
-}
-
-.main_bunner p:nth-of-type(4) {
-    font-family: Manrope;
-    font-size: 14px;
-    font-weight: bold;
-    line-height: 1.71;
-    color: #fff;
-}
 
 .column {
     height: 100%;
@@ -291,22 +9,22 @@ nav {
 }
 
 .for_enrollee2024 {
-    margin: auto auto;
     width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    gap: 4%;
+    justify-content: space-around;
 }
 
 .for_enrollee2024>div {
     border-radius: 24px;
     padding: 4.5%;
-    width: 48%;
+    width: min-content;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-inline: auto;
 }
 
 .for_enrollee2024>div>* {
@@ -330,11 +48,12 @@ nav {
 
 .for_enrollee2024 span {
     display: flex;
+    gap: 7px;
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: center;
     font-family: Manrope;
-    font-size: 32px;
+    font-size: calc(15px + (18 + 18 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1440));;
     font-weight: 800;
     line-height: 1.25;
     text-align: center;
@@ -348,7 +67,7 @@ nav {
 
 .for_enrollee2024>div>p:nth-of-type(1) {
     font-family: Manrope;
-    font-size: 20px;
+    font-size: calc(12px + (4 + 4 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1440));
     font-weight: 500;
     line-height: auto;
     text-align: center;
@@ -383,7 +102,7 @@ nav {
 
 .Educational_services>p:nth-of-type(1) {
     font-family: Manrope;
-    font-size: 36px;
+    font-size: calc(26px + (10 + 10  * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1440));;
     font-weight: 800;
     line-height: 1.33;
     text-align: center;
@@ -392,7 +111,7 @@ nav {
 
 .Educational_services>p:nth-of-type(2) {
     font-family: Manrope;
-    font-size: 16px;
+    font-size: calc(16px  * ((100vw - var(--coefficient-second)) / 1440));;
     font-weight: 500;
     line-height: 1.5;
     text-align: center;
@@ -450,7 +169,7 @@ nav {
 
 .element>p:nth-of-type(1) {
     font-family: Manrope;
-    font-size: 24px;
+    font-size: calc(10px + (14 + 14 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1440));;
     font-weight: 800;
     line-height: 1;
     text-align: center;
@@ -460,7 +179,7 @@ nav {
 .element>p:nth-of-type(2) {
     width: 70%;
     font-family: Manrope;
-    font-size: 16px;
+    font-size: calc(8px + (8 + 8 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1440));;
     font-weight: 500;
     line-height: 1.5;
     text-align: center;
@@ -697,6 +416,7 @@ nav {
 }
 
 .ads>span {
+    position: relative;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -819,7 +539,15 @@ nav {
     color: #000;
 }
 
-.container>p:nth-of-type(2) {
+.container>span{
+    position: relative;
+    display: flex;
+    gap: 2vw;
+    flex-direction: row;
+    margin-bottom: 2%;
+}
+
+.container>span>p {
     font-family: Manrope;
     font-size: 24px;
     font-weight: 500;
@@ -925,7 +653,11 @@ swiper-slide>p:nth-of-type(2) {
     background-color: #f5f6f7;
 }
 
-.other {
+.more{
+    padding-inline-start: 1%;
+}
+
+.wrapper>span>button:nth-child(4), .more{
     position: absolute;
     right: 15px;
     padding-inline-end: 0;
@@ -1009,7 +741,6 @@ swiper-slide>p:nth-of-type(2) {
 .elem>p:nth-child(5) {
     font-family: Manrope;
     font-size: calc(6px + (8 + 8 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1680));
-    ;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
@@ -1079,7 +810,7 @@ footer>div:first-of-type {
     gap: 5%;
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
 }
 
 footer>div>span:nth-of-type(4) {
@@ -1090,7 +821,7 @@ footer>div>span:nth-of-type(4) {
 
 footer>div>span:nth-of-type(3)>p:nth-child(4) {
     font-family: Manrope;
-    font-size: 16px;
+    font-size: calc(8px + (8 + 8 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1680));;
     font-weight: 500;
     line-height: 2;
     color: #fff;
@@ -1098,7 +829,7 @@ footer>div>span:nth-of-type(3)>p:nth-child(4) {
 
 footer>div>span:nth-of-type(3)>p:nth-child(6) {
     font-family: Manrope;
-    font-size: 16px;
+    font-size: calc(8px + (8 + 8 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1680));;
     font-weight: 500;
     line-height: 2;
     color: #fff;
@@ -1134,8 +865,8 @@ footer>div>span:nth-of-type(4) button:nth-of-type(3)>div {
 footer>span {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
-    width: 90%;
+    flex-wrap: wrap;
+    width: 100%;
     justify-content: space-between;
 }
 
@@ -1145,7 +876,7 @@ footer>div>span>p:nth-child(1) {
 
 footer p {
     font-family: Manrope;
-    font-size: 16px;
+    font-size: calc(8px + (8 + 8 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1680));;
     font-weight: 800;
     line-height: 2;
     color: #fff;
@@ -1153,7 +884,7 @@ footer p {
 
 footer ul {
     font-family: Manrope;
-    font-size: 16px;
+    font-size: calc(8px + (8 + 8 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1680));;
     font-weight: 500;
     line-height: 2;
     color: #fff;
@@ -1161,7 +892,7 @@ footer ul {
 
 footer>span>p:nth-child(2) {
     font-family: Manrope;
-    font-size: 16px;
+    font-size: calc(8px + (8 + 8 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1680));;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;

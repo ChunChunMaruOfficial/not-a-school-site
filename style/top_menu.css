@@ -50,11 +50,6 @@ table {
 }
 
 
-:root {
-    --coefficient-first: 0;
-    --coefficient-second: 0px;
-}
-
 /*reset end*/
 
 body {
@@ -82,7 +77,9 @@ header a {
     flex-direction: row;
     flex-wrap: nowrap;
     width: 100%;
+    width: 98%;
     height: 36px;
+    padding-inline-start: 2%;
     background-color: #1c3343;
 }
 
@@ -92,9 +89,10 @@ header a {
 
 .most_top>span {
     position: absolute;
-    right: 6%;
+    right: 5%;
     gap: 8%;
     display: flex;
+    align-items: center;
 }
 
 .most_top p {
@@ -103,7 +101,7 @@ header a {
     flex-direction: row;
     text-wrap: nowrap;
     font-family: Manrope;
-    font-size: 16px;
+    font-size: calc(8px + (8 + 8 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1440));;
     font-weight: bold;
     line-height: 100%;
     color: #fff;
@@ -184,7 +182,7 @@ nav {
 }
 
 .topmenu>li {
-    padding: 2% 1%;
+    padding: 1.2% .5%;
     width: 11%;
     float: left;
     position: relative;
@@ -269,7 +267,7 @@ nav {
     margin-bottom: 1.5%;
     width: 40%;
     font-family: Manrope;
-    font-size: 20px;
+    font-size: calc(8px + (12 + 12 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1440));
     font-weight: 500;
     line-height: 1.6;
     color: #fff;
