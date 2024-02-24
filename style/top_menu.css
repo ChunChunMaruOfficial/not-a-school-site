@@ -40,7 +40,7 @@ q:after {
     content: none;
 }
 
-button:hover {
+button:hover, a:hover {
     cursor: pointer;
 }
 
@@ -221,7 +221,7 @@ nav {
     color: white;
     text-align: left;
     padding: 12px 15px;
-    font-size: 13px;
+    font-size: calc(5px + (10 + 10 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1680));
     border-bottom: 1px solid rgba(255, 255, 255, .1);
 }
 
@@ -237,7 +237,7 @@ nav {
     background-color: #00acbd;
 }
 
-.main_bunner p {
+.main_bunner p, .main_bunner a {
     margin-left: 10%;
 }
 
@@ -273,9 +273,11 @@ nav {
     color: #fff;
 }
 
-.main_bunner p:nth-of-type(4) {
+.main_bunner a {
+    display: flex;
+    align-items: center;
     font-family: Manrope;
-    font-size: 14px;
+    font-size: calc(6px + (8 + 8 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1680));;
     font-weight: bold;
     line-height: 1.71;
     color: #fff;

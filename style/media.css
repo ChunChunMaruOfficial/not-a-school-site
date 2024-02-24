@@ -107,6 +107,11 @@
     width: 100%;
     padding-inline: 1% ;
 }
+
+.emoji{
+width: 12vw;
+}
+
 footer>div>span{
     margin-bottom: 4%;
 }
@@ -118,6 +123,38 @@ footer>div>span{
     :root{
         --coefficient-first: 0.7;
         --coefficient-second: 320px;
+}
+
+.logo_container>div:nth-of-type(3){
+    display: none;
+}
+
+.ours_teachers{
+    margin-inline: auto;
+    width: 75%;
+    flex-direction: column-reverse;
+}
+
+.ours_teachers aside{
+    margin-top: 6%;
+    width: 100%;
+}
+
+.ours_teachers>div:first-of-type {
+    top: 0;
+    left: 7%;
+    width: 88%;
+}
+
+.foto{
+    position: inherit;
+    right: 0;
+    left: 3.5%;
+    width: 90%;
+    z-index: 1;
+}
+.teachers_list>div:first-of-type, .teachers_list>div:nth-last-of-type(1){
+    width: 25%;
 }
 }
 

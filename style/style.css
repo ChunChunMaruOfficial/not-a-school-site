@@ -28,7 +28,7 @@
 }
 
 .for_enrollee2024>div>* {
-    margin-bottom: 2%;
+    margin-bottom: 4%;
 }
 
 .for_enrollee2024>div:nth-of-type(1) .emoji {
@@ -40,8 +40,8 @@
 }
 
 .emoji {
-    height: 100px;
-    width: 100px;
+    aspect-ratio: 1 / 1;
+    width: 8vw;
     background-size: 100%;
     background-repeat: no-repeat;
 }
@@ -76,6 +76,8 @@
 }
 
 .read_more {
+    display: flex;
+    align-items: center;
     font-family: Manrope;
     font-size: 14px;
     font-weight: bold;
@@ -121,7 +123,7 @@
 
 #welcome {
     aspect-ratio: 960 / 72;
-    width: 75%;
+    font-size: calc(12px + (14 + 14 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1440));
     display: flex;
     justify-content: center;
     align-items: center;
@@ -130,7 +132,6 @@
     font-family: Manrope;
     margin-inline: auto;
     margin-block: 5vh 15vh;
-    font-size: 24px;
     font-weight: 500;
     line-height: 1.5;
     text-align: center;
@@ -169,7 +170,7 @@
 
 .element>p:nth-of-type(1) {
     font-family: Manrope;
-    font-size: calc(10px + (14 + 14 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1440));;
+    font-size: calc(10px + (14 + 14 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1440));
     font-weight: 800;
     line-height: 1;
     text-align: center;
@@ -226,15 +227,16 @@
 
 .ours_teachers aside>p:first-of-type {
     font-family: Manrope;
-    font-size: 20px;
+    font-size: calc(8px + (8 + 8 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1440));
     font-weight: 800;
     line-height: 1.6;
     color: #000;
 }
 
 .ours_teachers aside>p:nth-of-type(2) {
+    text-wrap: nowrap;
     font-family: Manrope;
-    font-size: 32px;
+    font-size: calc(16px + (16 + 16 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1440));
     font-weight: 800;
     line-height: 1.63;
     color: #000;
@@ -243,7 +245,7 @@
 .ours_teachers aside>p:nth-of-type(3),
 .ours_teachers aside>p:nth-of-type(5) {
     font-family: Manrope;
-    font-size: 20px;
+    font-size: calc(10px + (10 + 10 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1440));
     font-weight: 500;
     line-height: 1.6;
     color: #525f6c;
@@ -262,16 +264,17 @@
     display: flex;
 }
 
-.teachers_list>div:first-of-type {
+.teachers_list>div:first-of-type, .teachers_list>div:nth-last-of-type(1) {
     display: flex;
     width: 50%;
+}
+
+.teachers_list>div:first-of-type {
     background: url('../img/code/arrows/arrow-back.png');
     background-size: 100%;
 }
 
 .teachers_list>div:nth-last-of-type(1) {
-    display: flex;
-    width: 50%;
     background: url('../img/code/arrows/arrow-forward.png');
     background-size: 100%;
 }
@@ -635,7 +638,7 @@ swiper-slide>p:nth-of-type(2) {
     display: flex;
     gap: 2vw;
     flex-direction: row;
-    margin-bottom: 2%;
+    margin-block: 2%;
 }
 
 .wrapper>span>button {
@@ -689,7 +692,7 @@ swiper-slide>p:nth-of-type(2) {
     aspect-ratio: 430 / 580;
     display: flex;
     flex-direction: column;
-    gap: .5vw;
+    gap: 1vw;
 }
 
 .elem>div {
@@ -736,17 +739,6 @@ swiper-slide>p:nth-of-type(2) {
     line-height: 1.6;
     letter-spacing: normal;
     color: #525f6c;
-}
-
-.elem>p:nth-child(5) {
-    font-family: Manrope;
-    font-size: calc(6px + (8 + 8 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1680));
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.71;
-    letter-spacing: normal;
-    color: #337cbd;
 }
 
 /*left panel*/
