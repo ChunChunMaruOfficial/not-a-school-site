@@ -1,0 +1,64 @@
+/* hovers */
+
+@media (hover: hover) {
+
+    .for_enrollee2024>div:hover,
+    .element:hover {
+        background-color: #f3f3f3;
+        outline: 3px solid #d2d2d2;
+        outline-offset: -2px;
+    }
+
+    .topmenu li:hover {
+        background-color: #5fd45f;
+    }
+
+    .topmenu>li:hover .submenu {
+        opacity: 1;
+        /*??????????????*/
+        transform: scaleY(1);
+    }
+
+    .wrapper>span>button:hover {
+        color: #fff;
+        background-color: #1db248;
+    }
+
+    footer>div>span:nth-of-type(4) button:hover {
+        background-color: #3c464d;
+        border: 0;
+    }
+}
+
+
+@media (hover: none) {
+
+    .for_enrollee2024>div:active,
+    .element:active {
+        background-color: #f3f3f3;
+        outline: 3px solid #d2d2d2;
+        outline-offset: -2px;
+    }
+
+    .topmenu li:active {
+        background-color: #5fd45f;
+    }
+
+    .topmenu>li:active .submenu {
+        opacity: 1;
+        /*????????????????*/
+        transform: scaleY(1);
+    }
+
+
+    .wrapper>span>button:active {
+        color: #fff;
+        background-color: #1db248;
+    }
+
+    footer>div>span:nth-of-type(4) button:active {
+        background-color: #3c464d;
+        border: 0;
+    }
+
+}

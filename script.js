@@ -14,48 +14,48 @@ for (let i = 0; i < 8; i++) {
     document.querySelector('#innercontainer').appendChild(clonedFrame);
     switch (i) {
         case 0:
-            clonedFrame.children[0].children[0].style.backgroundImage = "url(icons/" + i + ".png)";
+            clonedFrame.children[0].children[0].style.backgroundImage = "url(img/icons/" + i + ".png)";
             clonedFrame.children[1].innerHTML = 'Вспомнить все. Помнить каждого.';
             clonedFrame.children[2].innerHTML = 'Example Example';
             break;
         case 1:
-            clonedFrame.children[0].children[0].style.backgroundImage = "url(icons/" + i + ".png)";
+            clonedFrame.children[0].children[0].style.backgroundImage = "url(img/icons/" + i + ".png)";
             clonedFrame.children[1].innerHTML = 'Родительский университет';
             clonedFrame.children[2].innerHTML = 'Example Example';
             break;
         case 2:
             clonedFrame.children[0].style.backgroundColor = "#34a0f7"
-            clonedFrame.children[0].children[0].style.backgroundImage = "url(icons/" + i + ".png)";
+            clonedFrame.children[0].children[0].style.backgroundImage = "url(img/icons/" + i + ".png)";
             clonedFrame.children[1].innerHTML = 'Профилактика противоправного поведения';
             clonedFrame.children[2].innerHTML = 'Example Example';
             break;
         case 3:
             clonedFrame.children[0].style.backgroundColor = "#34a0f7"
-            clonedFrame.children[0].children[0].style.backgroundImage = "url(icons/" + i + ".png)";
+            clonedFrame.children[0].children[0].style.backgroundImage = "url(img/icons/" + i + ".png)";
             clonedFrame.children[1].innerHTML = 'Здоровое питание';
             clonedFrame.children[2].innerHTML = 'Example Example';
             break;
         case 4:
             clonedFrame.children[0].style.backgroundColor = "#34a0f7"
-            clonedFrame.children[0].children[0].style.backgroundImage = "url(icons/" + i + ".png)";
+            clonedFrame.children[0].children[0].style.backgroundImage = "url(img/icons/" + i + ".png)";
             clonedFrame.children[1].innerHTML = 'Профориентация';
             clonedFrame.children[2].innerHTML = 'Example Example';
             break;
         case 5:
             clonedFrame.children[0].style.backgroundColor = "#776be0"
-            clonedFrame.children[0].children[0].style.backgroundImage = "url(icons/" + i + ".png)";
+            clonedFrame.children[0].children[0].style.backgroundImage = "url(img/icons/" + i + ".png)";
             clonedFrame.children[1].innerHTML = 'Профсоюзный комитет';
             clonedFrame.children[2].innerHTML = 'Example Example';
             break;
         case 6:
             clonedFrame.children[0].style.backgroundColor = "#776be0"
-            clonedFrame.children[0].children[0].style.backgroundImage = "url(icons/" + i + ".png)";
+            clonedFrame.children[0].children[0].style.backgroundImage = "url(img/icons/" + i + ".png)";
             clonedFrame.children[1].innerHTML = 'Школа активного гражданина';
             clonedFrame.children[2].innerHTML = 'Example Example';
             break;
         case 7:
             clonedFrame.children[0].style.backgroundColor = "#776be0"
-            clonedFrame.children[0].children[0].style.backgroundImage = "url(icons/" + i + ".png)";
+            clonedFrame.children[0].children[0].style.backgroundImage = "url(img/icons/" + i + ".png)";
             clonedFrame.children[1].innerHTML = 'Твоя безопасность';
             clonedFrame.children[2].innerHTML = 'Example Example';
             break;
