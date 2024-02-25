@@ -79,7 +79,7 @@
     display: flex;
     align-items: center;
     font-family: Manrope;
-    font-size: 14px;
+    font-size: calc(8px + (6 + 6 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1440));;
     font-weight: bold;
     line-height: 1.71;
     color: #337cbd;
@@ -131,7 +131,7 @@
     background-color: #ff3098;
     font-family: Manrope;
     margin-inline: auto;
-    margin-block: 5vh 15vh;
+    margin-block: 5vh 10vh;
     font-weight: 500;
     line-height: 1.5;
     text-align: center;
@@ -188,7 +188,7 @@
 }
 
 .ours_teachers {
-    width: 100%;
+    width: 98%;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -227,7 +227,7 @@
 
 .ours_teachers aside>p:first-of-type {
     font-family: Manrope;
-    font-size: calc(8px + (8 + 8 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1440));
+    font-size: calc(10px + (8 + 8 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1440));
     font-weight: 800;
     line-height: 1.6;
     color: #000;
@@ -245,7 +245,7 @@
 .ours_teachers aside>p:nth-of-type(3),
 .ours_teachers aside>p:nth-of-type(5) {
     font-family: Manrope;
-    font-size: calc(10px + (10 + 10 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1440));
+    font-size: calc(10px + (8 + 8 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1440));
     font-weight: 500;
     line-height: 1.6;
     color: #525f6c;
@@ -253,7 +253,7 @@
 
 .ours_teachers aside>p:nth-of-type(4) {
     font-family: Manrope;
-    font-size: 20px;
+    font-size: calc(10px + (8 + 8 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1440));
     font-weight: 800;
     line-height: 1.6;
     color: #000;
@@ -280,9 +280,10 @@
 }
 
 .social_bunner {
+    padding-block: 3%;
     margin-block: 20vh;
     background-color: #ff3098;
-    width: 85%;
+    width: 90%;
     margin-inline: auto;
     aspect-ratio: 1320 / 400;
     display: flex;
@@ -300,12 +301,9 @@
 
 .social_bunner>p:nth-of-type(1) {
     font-family: Manrope;
-    font-size: 24px;
+    font-size: calc(12px + (12 + 12 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1440));
     font-weight: 800;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 2.17;
-    letter-spacing: normal;
     text-align: center;
     color: #fff;
 }
@@ -316,12 +314,9 @@
     flex-direction: row;
     flex-wrap: nowrap;
     font-family: Manrope;
-    font-size: 24px;
+    font-size: calc(10px + (14 + 14 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1440));
     font-weight: 800;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 2.17;
-    letter-spacing: normal;
     color: #fff;
 }
 
@@ -352,18 +347,15 @@
 
 .social_bunner>p:nth-of-type(2) {
     font-family: Manrope;
-    font-size: 16px;
+    font-size: calc(10px + (6 + 6 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1440));
     font-weight: 600;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 3.25;
-    letter-spacing: normal;
     text-align: center;
     color: #fff;
 }
 
 .social_bunner>span:nth-of-type(2) {
-    width: 60%;
+    width: 100%;
     margin-inline: auto;
     display: flex;
     justify-content: center;
@@ -380,12 +372,9 @@
     flex-wrap: nowrap;
 
     font-family: Manrope;
-    font-size: 20px;
+    font-size: calc(8px + (12 + 12 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1440));
     font-weight: 600;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 1.6;
-    letter-spacing: normal;
     text-align: center;
     color: #000;
 
@@ -403,7 +392,7 @@
 
 .ads {
     margin-inline: auto;
-    width: 85%;
+    width: 90%;
     display: flex;
     flex-direction: column;
     gap: 1.5vh;
@@ -412,7 +401,7 @@
 
 .ads>p:nth-of-type(1) {
     font-family: Manrope;
-    font-size: 48px;
+    font-size: calc(20px + (28 + 28 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1440));
     font-weight: 800;
     line-height: 1.33;
     color: #000;
@@ -427,7 +416,7 @@
 
 .ads>span>p {
     font-family: Manrope;
-    font-size: 24px;
+    font-size: calc(12px + (14 + 14 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1440));
     font-weight: 500;
     line-height: 1.5;
     color: #525f6c;
@@ -453,14 +442,14 @@
 
 .ads>div:first-of-type>p:nth-of-type(1) {
     font-family: Manrope;
-    font-size: 16px;
+    font-size: calc(8px + (8 + 8 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1440));;
     line-height: 2;
     color: #7a858f;
 }
 
 .ads>div:first-of-type>p:nth-of-type(2) {
     font-family: Manrope;
-    font-size: 24px;
+    font-size: calc(12px + (14 + 14 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1440));
     font-weight: 800;
     line-height: 1.33;
     color: #000;
@@ -468,7 +457,7 @@
 
 .ads>div:first-of-type>p:nth-of-type(3) {
     font-family: Manrope;
-    font-size: 20px;
+    font-size: calc(10px + (10 + 10 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1440));
     line-height: 1.6;
     color: #525f6c;
 }
@@ -479,10 +468,7 @@
     width: 96%;
     justify-content: space-around;
     margin-inline: auto;
-}
-
-.extra>div {
-    width: 30%;
+    gap: 2.5%;
 }
 
 .extra>div>* {
@@ -498,7 +484,7 @@
 
 .extra>div>div>div{
     font-family: Manrope;
-    font-size: 16px;
+    font-size: calc(8px + (8 + 8 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1440));;
     padding: 1.5%;
     text-align: center;
     color: #fff;
@@ -509,14 +495,14 @@
 
 .extra>div>p:first-of-type{
     font-family: Manrope;
-    font-size: 16px;
+    font-size: calc(8px + (8 + 8 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1440));;
     line-height: 2;
     color: #7a858f;
 }
 
 .extra>div>p:nth-of-type(2){
     font-family: Manrope;
-    font-size: 24px;
+    font-size: calc(12px + (12 + 12 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1440));
     font-weight: 800;
     line-height: 1.33;
     color: #000;  
@@ -524,21 +510,21 @@
 
 .extra>div>p:nth-of-type(3){
     font-family: Manrope;
-    font-size: 20px;
+    font-size: calc(10px + (8 + 8 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1440));
     line-height: 1.6;
     color: #525f6c;
   
 }
-
+.container>p:nth-of-type(1), .container>span{
+    width: 90%;
+    margin-inline: auto;
+}
 
 .container>p:nth-of-type(1) {
     font-family: Manrope;
-    font-size: 48px;
+    font-size: calc(20px + (28 + 28 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1440));
     font-weight: 800;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 1.33;
-    letter-spacing: normal;
     color: #000;
 }
 
@@ -552,12 +538,9 @@
 
 .container>span>p {
     font-family: Manrope;
-    font-size: 24px;
+    font-size: calc(12px + (14 + 14 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1440));
     font-weight: 500;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 1.5;
-    letter-spacing: normal;
     color: #525f6c;
 }
 
@@ -587,49 +570,37 @@ swiper-slide>p:nth-of-type(1) {
     font-family: Manrope;
     font-size: calc(6px + (22 + 22 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1680));
     font-weight: 800;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 1.33;
-    letter-spacing: normal;
     color: #000;
 }
 
 swiper-slide>p:nth-of-type(2) {
     font-family: Manrope;
     font-size: calc(6px + (14 + 14 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1680));
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 1.6;
-    letter-spacing: normal;
     color: #525f6c;
 }
 
 /*wrapper*/
 
 .wrapper {
-    width: 100%;
+    width: 90%;
+    margin-inline: auto;
 }
 
 .wrapper>p:nth-of-type(1) {
     font-family: Manrope;
-    font-size: 48px;
+    font-size: calc(20px + (28 + 28 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1440));
     font-weight: 800;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 1.33;
-    letter-spacing: normal;
     color: #000;
 }
 
 .wrapper>p:nth-of-type(2) {
     font-family: Manrope;
-    font-size: 24px;
+    font-size: calc(12px + (14 + 14 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1440));
     font-weight: 500;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 1.5;
-    letter-spacing: normal;
     color: #525f6c;
 }
 
@@ -644,13 +615,9 @@ swiper-slide>p:nth-of-type(2) {
 .wrapper>span>button {
     padding-inline: 1%;
     font-family: Manrope;
-    font-size: 16px;
-    font-weight: normal;
+    font-size: calc(8px + (8 + 8 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1440));;
     font-weight: 700;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 2.29;
-    letter-spacing: normal;
     color: #333;
     border-radius: 26px;
     background-color: #f5f6f7;
@@ -670,18 +637,15 @@ swiper-slide>p:nth-of-type(2) {
     height: 100%;
     align-items: center;
     font-family: Manrope;
-    font-size: 16px;
+    font-size: calc(8px + (8 + 8 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1440));;
     font-weight: 800;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 1.5;
-    letter-spacing: normal;
     color: #337cbd;
 }
 
 .wrapper>div {
     display: flex;
-    gap: 1.5vw;
+    gap: 1.3vw;
     flex-direction: row;
     flex-wrap: wrap;
 }
@@ -711,11 +675,7 @@ swiper-slide>p:nth-of-type(2) {
 .elem>p:nth-child(2) {
     font-family: Manrope;
     font-size: calc(6px + (10 + 10 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1680));
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 2;
-    letter-spacing: normal;
     color: #7a858f;
 }
 
@@ -723,68 +683,17 @@ swiper-slide>p:nth-of-type(2) {
     font-family: Manrope;
     font-size: calc(8px + (16 + 16 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1680));
     font-weight: 800;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 1.33;
-    letter-spacing: normal;
     color: #000;
 }
 
 .elem>p:nth-child(4) {
     font-family: Manrope;
     font-size: calc(8px + (12 + 12 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1680));
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 1.6;
-    letter-spacing: normal;
     color: #525f6c;
 }
 
-/*left panel*/
-
-.left_menu{
-    background-color: green;
-    width: max-content;
-}
-
-.left_menu>span>input{
-    padding: 14px 190px 14px 28px;
-    border-radius: 8px;
-    border: solid 2px #5fd45f;
-    background-color: #fff;
-}
-
-.left_menu>span{
-    position: relative;
-    &:before {
-      content: '';
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 1%;
-      margin: auto 0;
-      width: 30px;
-      height: 30px;
-      background: url('https://cdn.zeplin.io/65be4a7bd3d6b84bdc44d5e5/assets/326ED4A1-4BA8-4E47-9DED-9AD0C2CA6963.svg') no-repeat;
-      background-size: cover;
-    }
-}
-.left_menu p{
-    padding-left: 4%;
-    font-family: Manrope;
-    font-size: 16px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 2.5;
-    letter-spacing: normal;
-    color: #fff;
-}
-
-.left_menu p:hover{
-    background-color: lightgreen;
-}
 /*fooooooooooooooooooooooooter*/
 
 footer {

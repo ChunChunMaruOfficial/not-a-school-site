@@ -1,0 +1,95 @@
+body>div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 2.5%;
+    justify-content: space-around   ;
+}
+
+.left_menu{
+    background-color: #1db248;
+    width: 21.5%;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.left_menu>span>input{
+    padding-left: 13.5%;
+    height: 3em;
+    margin: 2% 2% 3% 2%;
+    width: 94%;
+    border-radius: 8px;
+    border: solid 2px #5fd45f;
+    background-color: #fff;
+
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 14px;
+    color: #242424;
+}
+
+.left_menu>span{
+    position: relative;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 4%;
+      margin: auto 0;
+      width: 30px;
+      height: 30px;
+      background: url('../img/code/search.png') no-repeat;
+      background-size: cover;
+    }
+}
+.left_menu p{
+    padding-left: 4%;
+    font-family: Manrope;
+    font-size: calc(8px + (8 + 8 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1440));;
+    font-weight: bold;
+    line-height: 2.5;
+    color: #fff;
+}
+
+.left_menu p:hover{
+    background-color: #5fd45f;
+    cursor: pointer;
+}
+
+.left_menu p:active{
+    background-color: #067225;
+}
+
+.content{
+    width: 70%;
+    background-color: antiquewhite ;
+}
+
+.content>*{
+    margin-bottom: 3vh;
+}
+
+#path{
+    font-family: Manrope;
+    font-size: 16px;
+    font-weight: 500;
+    color: #3c464d;
+}
+
+#path a{
+    color: #16847a;
+}
+
+.content>p:nth-of-type(2){
+    font-family: Manrope;
+    font-size: 32px;
+    font-weight: 800;
+    color: #000;
+}
+
+.content>p:nth-of-type(3){
+    font-family: Manrope;
+    font-size: 20px;
+    line-height: 1.2;
+    color: #242424;
+}

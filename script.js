@@ -1,3 +1,11 @@
+let c;
+if (window.innerWidth < 901) {
+    c = 1
+    wrp = 3
+} else {
+    c = 2;
+    wrp = 5
+}
 let date = new Date();
 let day = date.getDate();
 let month = date.getMonth() + 1;
@@ -62,7 +70,7 @@ for (let i = 0; i < 8; i++) {
     }
 }
 
-for (let i = 0; i < 2; i++) {
+for (let i = 0; i < c; i++) {
     var clonedFrame = document.querySelector('.extra>div').cloneNode(true);
     document.querySelector('.extra').appendChild(clonedFrame);
 
@@ -75,5 +83,5 @@ function clon(child, parent, count) {
         parent.appendChild(clone)
     }
 }
-clon(document.querySelector('.elem'),document.querySelector('.wrapper>div'),5)
-clon(document.querySelector('swiper-slide'),document.querySelector('swiper-container'),8)
+clon(document.querySelector('.elem'), document.querySelector('.wrapper>div'), wrp)
+clon(document.querySelector('swiper-slide'), document.querySelector('swiper-container'), 8)
