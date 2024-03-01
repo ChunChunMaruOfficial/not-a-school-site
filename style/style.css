@@ -1,5 +1,3 @@
-
-
 .column {
     height: 100%;
     width: 80%;
@@ -53,7 +51,8 @@
     flex-wrap: nowrap;
     align-items: center;
     font-family: Manrope;
-    font-size: calc(15px + (18 + 18 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1440));;
+    font-size: calc(15px + (18 + 18 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1440));
+    ;
     font-weight: 800;
     line-height: 1.25;
     text-align: center;
@@ -79,7 +78,8 @@
     display: flex;
     align-items: center;
     font-family: Manrope;
-    font-size: calc(8px + (6 + 6 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1440));;
+    font-size: calc(8px + (6 + 6 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1440));
+    ;
     font-weight: bold;
     line-height: 1.71;
     color: #337cbd;
@@ -104,7 +104,8 @@
 
 .Educational_services>p:nth-of-type(1) {
     font-family: Manrope;
-    font-size: calc(26px + (10 + 10  * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1440));;
+    font-size: calc(26px + (10 + 10 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1440));
+    ;
     font-weight: 800;
     line-height: 1.33;
     text-align: center;
@@ -113,7 +114,7 @@
 
 .Educational_services>p:nth-of-type(2) {
     font-family: Manrope;
-    font-size: calc(16px  * ((100vw - var(--coefficient-second)) / 1440));;
+    font-size: calc(16px * ((100vw - var(--coefficient-second)) / 1440));
     font-weight: 500;
     line-height: 1.5;
     text-align: center;
@@ -180,7 +181,8 @@
 .element>p:nth-of-type(2) {
     width: 70%;
     font-family: Manrope;
-    font-size: calc(8px + (8 + 8 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1440));;
+    font-size: calc(8px + (8 + 8 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1440));
+    ;
     font-weight: 500;
     line-height: 1.5;
     text-align: center;
@@ -264,7 +266,8 @@
     display: flex;
 }
 
-.teachers_list>div:first-of-type, .teachers_list>div:nth-last-of-type(1) {
+.teachers_list>div:first-of-type,
+.teachers_list>div:nth-last-of-type(1) {
     display: flex;
     width: 50%;
 }
@@ -442,7 +445,8 @@
 
 .ads>div:first-of-type>p:nth-of-type(1) {
     font-family: Manrope;
-    font-size: calc(8px + (8 + 8 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1440));;
+    font-size: calc(8px + (8 + 8 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1440));
+    ;
     line-height: 2;
     color: #7a858f;
 }
@@ -475,16 +479,17 @@
     margin-bottom: 6.5%;
 }
 
-.extra>div>div:first-of-type{
+.extra>div>div:first-of-type {
     aspect-ratio: 401 / 200;
     border-radius: 16px;
     width: 100%;
     background-color: wheat;
 }
 
-.extra>div>div>div{
+.extra>div>div>div {
     font-family: Manrope;
-    font-size: calc(8px + (8 + 8 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1440));;
+    font-size: calc(8px + (8 + 8 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1440));
+    ;
     padding: 1.5%;
     text-align: center;
     color: #fff;
@@ -493,29 +498,32 @@
     border-radius: 8px;
 }
 
-.extra>div>p:first-of-type{
+.extra>div>p:first-of-type {
     font-family: Manrope;
-    font-size: calc(8px + (8 + 8 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1440));;
+    font-size: calc(8px + (8 + 8 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1440));
+    ;
     line-height: 2;
     color: #7a858f;
 }
 
-.extra>div>p:nth-of-type(2){
+.extra>div>p:nth-of-type(2) {
     font-family: Manrope;
     font-size: calc(12px + (12 + 12 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1440));
     font-weight: 800;
     line-height: 1.33;
-    color: #000;  
+    color: #000;
 }
 
-.extra>div>p:nth-of-type(3){
+.extra>div>p:nth-of-type(3) {
     font-family: Manrope;
     font-size: calc(10px + (8 + 8 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1440));
     line-height: 1.6;
     color: #525f6c;
-  
+
 }
-.container>p:nth-of-type(1), .container>span{
+
+.container>p:nth-of-type(1),
+.container>span {
     width: 90%;
     margin-inline: auto;
 }
@@ -528,7 +536,7 @@
     color: #000;
 }
 
-.container>span{
+.container>span {
     position: relative;
     display: flex;
     gap: 2vw;
@@ -544,29 +552,19 @@
     color: #525f6c;
 }
 
-swiper-container {
-    width: 100%;
-    height: 100%;
+.swiper_container {
+    margin-inline: auto;
+    width: 90%;
 }
 
-swiper-slide {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 38.8vw;
-    aspect-ratio: 652 / 412;
-    padding: .7%;
-    gap: 2%;
-}
 
-swiper-slide>div {
+.swiper_container div {
     width: 100%;
     aspect-ratio: 652 / 200;
     background-color: #3975b1;
 }
 
-swiper-slide>p:nth-of-type(1) {
+.swiper_container p:nth-of-type(1) {
     font-family: Manrope;
     font-size: calc(6px + (22 + 22 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1680));
     font-weight: 800;
@@ -574,12 +572,14 @@ swiper-slide>p:nth-of-type(1) {
     color: #000;
 }
 
-swiper-slide>p:nth-of-type(2) {
+.swiper_container p:nth-of-type(2) {
     font-family: Manrope;
     font-size: calc(6px + (14 + 14 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1680));
     line-height: 1.6;
     color: #525f6c;
+    margin-bottom: 2%;
 }
+
 
 /*wrapper*/
 
@@ -615,7 +615,8 @@ swiper-slide>p:nth-of-type(2) {
 .wrapper>span>button {
     padding-inline: 1%;
     font-family: Manrope;
-    font-size: calc(8px + (8 + 8 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1440));;
+    font-size: calc(8px + (8 + 8 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1440));
+    ;
     font-weight: 700;
     line-height: 2.29;
     color: #333;
@@ -623,11 +624,12 @@ swiper-slide>p:nth-of-type(2) {
     background-color: #f5f6f7;
 }
 
-.more{
+.more {
     padding-inline-start: 1%;
 }
 
-.wrapper>span>button:nth-child(4), .more{
+.wrapper>span>button:nth-child(4),
+.more {
     position: absolute;
     right: 15px;
     padding-inline-end: 0;
@@ -637,7 +639,8 @@ swiper-slide>p:nth-of-type(2) {
     height: 100%;
     align-items: center;
     font-family: Manrope;
-    font-size: calc(8px + (8 + 8 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1440));;
+    font-size: calc(8px + (8 + 8 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1440));
+    ;
     font-weight: 800;
     line-height: 1.5;
     color: #337cbd;
@@ -668,7 +671,8 @@ swiper-slide>p:nth-of-type(2) {
     margin-bottom: .5%;
 }
 
-.elem>div:hover { /*dont touch*/
+.elem>div:hover {
+    /*dont touch*/
     width: 100%;
 }
 
@@ -698,6 +702,7 @@ swiper-slide>p:nth-of-type(2) {
 
 footer {
     display: flex;
+    margin-top: 10%;
     padding: 4.5% 4.5% 2% 4.5%;
     flex-direction: column;
     background-color: #1db248;
@@ -722,7 +727,8 @@ footer>div>span:nth-of-type(4) {
 
 footer>div>span:nth-of-type(3)>p:nth-child(4) {
     font-family: Manrope;
-    font-size: calc(8px + (8 + 8 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1680));;
+    font-size: calc(8px + (8 + 8 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1680));
+    ;
     font-weight: 500;
     line-height: 2;
     color: #fff;
@@ -730,7 +736,8 @@ footer>div>span:nth-of-type(3)>p:nth-child(4) {
 
 footer>div>span:nth-of-type(3)>p:nth-child(6) {
     font-family: Manrope;
-    font-size: calc(8px + (8 + 8 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1680));;
+    font-size: calc(8px + (8 + 8 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1680));
+    ;
     font-weight: 500;
     line-height: 2;
     color: #fff;
@@ -777,7 +784,8 @@ footer>div>span>p:nth-child(1) {
 
 footer p {
     font-family: Manrope;
-    font-size: calc(8px + (8 + 8 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1680));;
+    font-size: calc(8px + (8 + 8 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1680));
+    ;
     font-weight: 800;
     line-height: 2;
     color: #fff;
@@ -785,7 +793,8 @@ footer p {
 
 footer ul {
     font-family: Manrope;
-    font-size: calc(8px + (8 + 8 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1680));;
+    font-size: calc(8px + (8 + 8 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1680));
+    ;
     font-weight: 500;
     line-height: 2;
     color: #fff;
@@ -793,7 +802,8 @@ footer ul {
 
 footer>span>p:nth-child(2) {
     font-family: Manrope;
-    font-size: calc(8px + (8 + 8 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1680));;
+    font-size: calc(8px + (8 + 8 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1680));
+    ;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;

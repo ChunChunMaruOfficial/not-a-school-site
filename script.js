@@ -81,7 +81,13 @@ function clon(child, parent, count) {
     for (let i = 0; i < count; i++) {
         let clone = child.cloneNode(true)
         parent.appendChild(clone)
-    }
+        if(count == 17){
+            child.style.backgroundImage = 'url(img/slider/' + (i+1) +'.jpg)'
+            console.log(i);
+        }
+    } 
+
 }
 clon(document.querySelector('.elem'), document.querySelector('.wrapper>div'), wrp)
-clon(document.querySelector('swiper-slide'), document.querySelector('swiper-container'), 8)
+clon(document.querySelector('.container_slider'), document.querySelector('.swiper_container'), 8)
+clon(document.querySelector('.main_bunner'), document.querySelector('.mySwiper'), 17) //на 1 меньше, чем слайдов

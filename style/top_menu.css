@@ -40,7 +40,8 @@ q:after {
     content: none;
 }
 
-button:hover, a:hover {
+button:hover,
+a:hover {
     cursor: pointer;
 }
 
@@ -102,7 +103,8 @@ header a {
     flex-direction: row;
     text-wrap: nowrap;
     font-family: Manrope;
-    font-size: calc(8px + (8 + 8 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1440));;
+    font-size: calc(8px + (8 + 8 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1440));
+    ;
     font-weight: bold;
     line-height: 100%;
     color: #fff;
@@ -172,7 +174,7 @@ nav {
     margin: 0 auto;
 }
 
-.topmenu{
+.topmenu {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -195,14 +197,15 @@ nav {
     justify-content: center;
     text-transform: uppercase;
     text-wrap: nowrap;
-    font-size:calc(5px + (10 + 10 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1680));
+    font-size: calc(5px + (10 + 10 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1680));
     font-weight: bold;
     color: #f3f3f3;
 }
 
 
-.submenu-link>svg{
+.submenu-link>img {
     height: 1em;
+    color: #FFF;
 }
 
 .submenu {
@@ -230,15 +233,24 @@ nav {
     border-bottom: none;
 }
 
+/**************************************/
+
+
 .main_bunner {
+
     justify-content: center;
     flex-direction: column;
     display: flex;
     aspect-ratio: 1680 / 560;
-    background-color: #00acbd;
+    font-size: 18px;
+    background-image: url('../img/slider/18.jpg');
+    justify-content: center;
+    background-size: 100%;
+    background-position-y: 50%;
 }
 
-.main_bunner p, .main_bunner a {
+.main_bunner p,
+.main_bunner a {
     margin-left: 10%;
 }
 
@@ -265,6 +277,7 @@ nav {
 }
 
 .main_bunner p:nth-of-type(3) {
+    text-shadow: 3px 3px 3px black;
     margin-bottom: 1.5%;
     width: 40%;
     font-family: Manrope;
@@ -278,7 +291,8 @@ nav {
     display: flex;
     align-items: center;
     font-family: Manrope;
-    font-size: calc(6px + (8 + 8 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1680));;
+    font-size: calc(6px + (8 + 8 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1680));
+    ;
     font-weight: bold;
     line-height: 1.71;
     color: #fff;
