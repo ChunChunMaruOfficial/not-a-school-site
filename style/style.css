@@ -79,7 +79,6 @@
     align-items: center;
     font-family: Manrope;
     font-size: calc(8px + (6 + 6 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1440));
-    ;
     font-weight: bold;
     line-height: 1.71;
     color: #337cbd;
