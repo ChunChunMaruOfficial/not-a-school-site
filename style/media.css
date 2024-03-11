@@ -3,6 +3,13 @@
 :root {
     --coefficient-first: 0;
     --coefficient-second: 0px;
+    --font-14px: calc(6px + (8 + 8 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1680));
+    --font-16px: calc(8px + (8 + 8 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1680));
+    --font-20px: calc(5px + (12 + 12 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1680));
+    --font-24px: calc(10px + (12 + 12 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1680));
+    --font-32px: calc(14px + (18 + 18 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1680));
+    --font-36px: calc(26px + (10 + 10 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1680));
+    --font-48px: calc(20px + (28 + 28 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1680));
 }
 
 @media (hover: hover) {

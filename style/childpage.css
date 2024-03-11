@@ -14,10 +14,10 @@ body>div{
 }
 
 .left_menu>span>input{
-    padding-left: 13.5%;
+    padding-left: 15%;
     height: 3em;
     margin: 2% 2% 3% 2%;
-    width: 94%;
+    width: 96%;
     border-radius: 8px;
     border: solid 2px #5fd45f;
     background-color: #fff;
@@ -42,21 +42,22 @@ body>div{
       background-size: cover;
     }
 }
-.left_menu p{
+.left_menu a{
+    display: block;
     padding-left: 4%;
     font-family: Manrope;
-    font-size: calc(8px + (8 + 8 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1440));;
+    font-size: var(--font-16px);
     font-weight: bold;
     line-height: 2.5;
     color: #fff;
 }
 
-.left_menu p:hover{
+.left_menu a:hover{
     background-color: #5fd45f;
     cursor: pointer;
 }
 
-.left_menu p:active{
+.left_menu a:active{
     background-color: #067225;
 }
 

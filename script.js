@@ -77,7 +77,7 @@ for (let i = 0; i < c; i++) {
 }
 
 
-function clon(child, parent, count) {
+let clon = (child, parent, count) => {
     for (let i = 0; i < count; i++) {
         let clone = child.cloneNode(true)
         parent.appendChild(clone)

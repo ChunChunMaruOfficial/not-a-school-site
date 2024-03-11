@@ -50,9 +50,7 @@
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: center;
-    font-family: Manrope;
-    font-size: calc(15px + (18 + 18 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1440));
-    ;
+    font-size: var(--font-32px);
     font-weight: 800;
     line-height: 1.25;
     text-align: center;
@@ -64,21 +62,20 @@
     margin: auto;
 }
 
-.for_enrollee2024>div>p:nth-of-type(1) {
-    font-family: Manrope;
-    font-size: calc(12px + (4 + 4 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1440));
-    font-weight: 500;
-    line-height: auto;
+.for_enrollee2024 a>p:nth-of-type(1) {
+    font-size: var(--font-20px);
+    line-height: 1rem;
     text-align: center;
+    margin-inline: auto;
     color: #525f6c;
     width: 80%;
+    font-weight: 600;
 }
 
 .read_more {
     display: flex;
     align-items: center;
-    font-family: Manrope;
-    font-size: calc(8px + (6 + 6 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1440));
+    font-size: var(--font-14px);
     font-weight: bold;
     line-height: 1.71;
     color: #337cbd;
@@ -102,9 +99,7 @@
 }
 
 .Educational_services>p:nth-of-type(1) {
-    font-family: Manrope;
-    font-size: calc(26px + (10 + 10 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1440));
-    ;
+    font-size: var(--font-36px);
     font-weight: 800;
     line-height: 1.33;
     text-align: center;
@@ -112,8 +107,7 @@
 }
 
 .Educational_services>p:nth-of-type(2) {
-    font-family: Manrope;
-    font-size: calc(16px * ((100vw - var(--coefficient-second)) / 1440));
+    font-size: var(--font-20px);
     font-weight: 500;
     line-height: 1.5;
     text-align: center;
@@ -123,13 +117,12 @@
 
 #welcome {
     aspect-ratio: 960 / 72;
-    font-size: calc(12px + (14 + 14 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1440));
+    font-size: var(--font-24px);
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 16px;
     background-color: #ff3098;
-    font-family: Manrope;
     margin-inline: auto;
     margin-block: 5vh 10vh;
     font-weight: 500;
@@ -169,8 +162,7 @@
 }
 
 .element>p:nth-of-type(1) {
-    font-family: Manrope;
-    font-size: calc(10px + (14 + 14 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1440));
+    font-size: var(--font-24px);
     font-weight: 800;
     line-height: 1;
     text-align: center;
@@ -179,9 +171,7 @@
 
 .element>p:nth-of-type(2) {
     width: 70%;
-    font-family: Manrope;
-    font-size: calc(8px + (8 + 8 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1440));
-    ;
+    font-size: var(--font-16px);
     font-weight: 500;
     line-height: 1.5;
     text-align: center;
@@ -227,8 +217,7 @@
 }
 
 .ours_teachers aside>p:first-of-type {
-    font-family: Manrope;
-    font-size: calc(10px + (8 + 8 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1440));
+    font-size: var(--font-20px);
     font-weight: 800;
     line-height: 1.6;
     color: #000;
@@ -236,8 +225,7 @@
 
 .ours_teachers aside>p:nth-of-type(2) {
     text-wrap: nowrap;
-    font-family: Manrope;
-    font-size: calc(16px + (16 + 16 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1440));
+    font-size: var(--font-32px);
     font-weight: 800;
     line-height: 1.63;
     color: #000;
@@ -245,16 +233,14 @@
 
 .ours_teachers aside>p:nth-of-type(3),
 .ours_teachers aside>p:nth-of-type(5) {
-    font-family: Manrope;
-    font-size: calc(10px + (8 + 8 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1440));
+    font-size: var(--font-20px);
     font-weight: 500;
     line-height: 1.6;
     color: #525f6c;
 }
 
 .ours_teachers aside>p:nth-of-type(4) {
-    font-family: Manrope;
-    font-size: calc(10px + (8 + 8 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1440));
+    font-size: var(--font-20px);
     font-weight: 800;
     line-height: 1.6;
     color: #000;
@@ -302,8 +288,7 @@
 }
 
 .social_bunner>p:nth-of-type(1) {
-    font-family: Manrope;
-    font-size: calc(12px + (12 + 12 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1440));
+    font-size: var(--font-24px);
     font-weight: 800;
     line-height: 2.17;
     text-align: center;
@@ -315,8 +300,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    font-family: Manrope;
-    font-size: calc(10px + (14 + 14 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1440));
+    font-size: var(--font-24px);
     font-weight: 800;
     line-height: 2.17;
     color: #fff;
@@ -348,8 +332,7 @@
 }
 
 .social_bunner>p:nth-of-type(2) {
-    font-family: Manrope;
-    font-size: calc(10px + (6 + 6 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1440));
+    font-size: var(--font-16px);
     font-weight: 600;
     line-height: 3.25;
     text-align: center;
@@ -372,15 +355,12 @@
     justify-content: center;
     flex-direction: row;
     flex-wrap: nowrap;
-
-    font-family: Manrope;
-    font-size: calc(8px + (12 + 12 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1440));
+    font-size: var(--font-20px);
     font-weight: 600;
     line-height: 1.6;
     text-align: center;
     color: #000;
-
-    padding: 1% 3.5%;
+    padding: 1% 3%;
     border-radius: 24px;
     margin-bottom: 2%;
 }
@@ -390,6 +370,7 @@
     height: 100%;
     background-image: url('../img/code/hashtag.png');
     background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 .ads {
@@ -402,8 +383,7 @@
 }
 
 .ads>p:nth-of-type(1) {
-    font-family: Manrope;
-    font-size: calc(20px + (28 + 28 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1440));
+    font-size: var(--font-48px);
     font-weight: 800;
     line-height: 1.33;
     color: #000;
@@ -417,8 +397,7 @@
 }
 
 .ads>span>p {
-    font-family: Manrope;
-    font-size: calc(12px + (14 + 14 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1440));
+    font-size: var(--font-24px);
     font-weight: 500;
     line-height: 1.5;
     color: #525f6c;
@@ -443,24 +422,20 @@
 }
 
 .ads>div:first-of-type>p:nth-of-type(1) {
-    font-family: Manrope;
-    font-size: calc(8px + (8 + 8 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1440));
-    ;
+    font-size: var(--font-16px);
     line-height: 2;
     color: #7a858f;
 }
 
 .ads>div:first-of-type>p:nth-of-type(2) {
-    font-family: Manrope;
-    font-size: calc(12px + (14 + 14 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1440));
+    font-size: var(--font-24px);
     font-weight: 800;
     line-height: 1.33;
     color: #000;
 }
 
 .ads>div:first-of-type>p:nth-of-type(3) {
-    font-family: Manrope;
-    font-size: calc(10px + (10 + 10 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1440));
+    font-size: var(--font-20px);
     line-height: 1.6;
     color: #525f6c;
 }
@@ -486,9 +461,7 @@
 }
 
 .extra>div>div>div {
-    font-family: Manrope;
-    font-size: calc(8px + (8 + 8 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1440));
-    ;
+    font-size: var(--font-16px);
     padding: 1.5%;
     text-align: center;
     color: #fff;
@@ -498,24 +471,20 @@
 }
 
 .extra>div>p:first-of-type {
-    font-family: Manrope;
-    font-size: calc(8px + (8 + 8 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1440));
-    ;
+    font-size: var(--font-16px);
     line-height: 2;
     color: #7a858f;
 }
 
 .extra>div>p:nth-of-type(2) {
-    font-family: Manrope;
-    font-size: calc(12px + (12 + 12 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1440));
+    font-size: var(--font-24px);
     font-weight: 800;
     line-height: 1.33;
     color: #000;
 }
 
 .extra>div>p:nth-of-type(3) {
-    font-family: Manrope;
-    font-size: calc(10px + (8 + 8 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1440));
+    font-size: var(--font-20px);
     line-height: 1.6;
     color: #525f6c;
 
@@ -528,8 +497,7 @@
 }
 
 .container>p:nth-of-type(1) {
-    font-family: Manrope;
-    font-size: calc(20px + (28 + 28 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1440));
+    font-size: var(--font-48px);
     font-weight: 800;
     line-height: 1.33;
     color: #000;
@@ -544,9 +512,7 @@
 }
 
 .container>span>p {
-    font-family: Manrope;
-    font-size: calc(12px + (14 + 14 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1440));
-    font-weight: 500;
+    font-size: var(--font-24px);
     line-height: 1.5;
     color: #525f6c;
 }
@@ -564,16 +530,14 @@
 }
 
 .swiper_container p:nth-of-type(1) {
-    font-family: Manrope;
-    font-size: calc(6px + (22 + 22 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1680));
+    font-size: var(--font-24px);
     font-weight: 800;
     line-height: 1.33;
     color: #000;
 }
 
 .swiper_container p:nth-of-type(2) {
-    font-family: Manrope;
-    font-size: calc(6px + (14 + 14 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1680));
+    font-size: var(--font-20px);
     line-height: 1.6;
     color: #525f6c;
     margin-bottom: 2%;
@@ -588,16 +552,14 @@
 }
 
 .wrapper>p:nth-of-type(1) {
-    font-family: Manrope;
-    font-size: calc(20px + (28 + 28 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1440));
+    font-size: var(--font-48px);
     font-weight: 800;
     line-height: 1.33;
     color: #000;
 }
 
 .wrapper>p:nth-of-type(2) {
-    font-family: Manrope;
-    font-size: calc(12px + (14 + 14 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1440));
+    font-size: var(--font-24px);
     font-weight: 500;
     line-height: 1.5;
     color: #525f6c;
@@ -613,9 +575,7 @@
 
 .wrapper>span>button {
     padding-inline: 1%;
-    font-family: Manrope;
-    font-size: calc(8px + (8 + 8 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1440));
-    ;
+    font-size: var(--font-20px);
     font-weight: 700;
     line-height: 2.29;
     color: #333;
@@ -637,9 +597,7 @@
     display: flex;
     height: 100%;
     align-items: center;
-    font-family: Manrope;
-    font-size: calc(8px + (8 + 8 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1440));
-    ;
+    font-size: var(--font-16px);
     font-weight: 800;
     line-height: 1.5;
     color: #337cbd;
@@ -676,23 +634,20 @@
 }
 
 .elem>p:nth-child(2) {
-    font-family: Manrope;
-    font-size: calc(6px + (10 + 10 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1680));
+    font-size: var(--font-16px);
     line-height: 2;
     color: #7a858f;
 }
 
 .elem>p:nth-child(3) {
-    font-family: Manrope;
-    font-size: calc(8px + (16 + 16 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1680));
+    font-size: var(--font-24px);
     font-weight: 800;
     line-height: 1.33;
     color: #000;
 }
 
 .elem>p:nth-child(4) {
-    font-family: Manrope;
-    font-size: calc(8px + (12 + 12 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1680));
+    font-size: var(--font-20px);
     line-height: 1.6;
     color: #525f6c;
 }
@@ -725,18 +680,14 @@ footer>div>span:nth-of-type(4) {
 }
 
 footer>div>span:nth-of-type(3)>p:nth-child(4) {
-    font-family: Manrope;
-    font-size: calc(8px + (8 + 8 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1680));
-    ;
+    font-size: var(--font-16px);
     font-weight: 500;
     line-height: 2;
     color: #fff;
 }
 
 footer>div>span:nth-of-type(3)>p:nth-child(6) {
-    font-family: Manrope;
-    font-size: calc(8px + (8 + 8 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1680));
-    ;
+    font-size: var(--font-16px);
     font-weight: 500;
     line-height: 2;
     color: #fff;
@@ -782,27 +733,20 @@ footer>div>span>p:nth-child(1) {
 }
 
 footer p {
-    font-family: Manrope;
-    font-size: calc(8px + (8 + 8 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1680));
-    ;
+    font-size: var(--font-16px);
     font-weight: 800;
     line-height: 2;
     color: #fff;
 }
 
 footer ul {
-    font-family: Manrope;
-    font-size: calc(8px + (8 + 8 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1680));
-    ;
-    font-weight: 500;
+    font-size: var(--font-16px);
     line-height: 2;
     color: #fff;
 }
 
 footer>span>p:nth-child(2) {
-    font-family: Manrope;
-    font-size: calc(8px + (8 + 8 * var(--coefficient-first)) * ((100vw - var(--coefficient-second)) / 1680));
-    ;
+    font-size: var(--font-16px);
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
