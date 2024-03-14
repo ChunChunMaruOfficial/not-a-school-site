@@ -6,15 +6,12 @@ if (window.innerWidth < 901) {
     c = 2;
     wrp = 5
 }
-let date = new Date();
-let day = date.getDate();
-let month = date.getMonth() + 1;
-let year = date.getFullYear();
-let formattedDate = day + "-" + month + "-" + year;
 
-const options = { weekday: 'long' };
-const dayOfWeek = new Date().toLocaleString('en-US', options);
-document.querySelector('.date').innerHTML = dayOfWeek + " " + formattedDate;
+const Month = ["Янв", "Фев", "Мар", "Апр", "май", "Июн", "Июль", "Авг", "Сен", "Окт", "Ноя", "дек"]
+var days = ['Вс','Пн','Вт','Ср','Чт','Пт','Сб'];
+
+const dayOfWeek = days[new Date().getDay()]
+document.querySelector('.date').innerHTML = dayOfWeek + ", " + new Date().getDate() + " " + Month[new Date().getMonth()] + ".";
 
 
 for (let i = 0; i < 8; i++) {
@@ -81,11 +78,11 @@ let clon = (child, parent, count) => {
     for (let i = 0; i < count; i++) {
         let clone = child.cloneNode(true)
         parent.appendChild(clone)
-        if(count == 17){
-            child.style.backgroundImage = 'url(img/slider/' + (i+1) +'.jpg)'
+        if (count == 17) {
+            child.style.backgroundImage = 'url(img/slider/' + (i + 1) + '.jpg)'
             console.log(i);
         }
-    } 
+    }
 
 }
 clon(document.querySelector('.elem'), document.querySelector('.wrapper>div'), wrp)

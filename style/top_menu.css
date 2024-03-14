@@ -12,7 +12,7 @@ ul {
     list-style: none;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
@@ -66,10 +66,8 @@ header a {
     align-items: center;
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
-    width: 100%;
     width: 98%;
-    height: 36px;
+    height: 3em;
     padding-inline-start: 2%;
     background-color: #1c3343;
 }
@@ -84,6 +82,11 @@ header a {
     gap: 8%;
     display: flex;
     align-items: center;
+    height: 100%;
+}
+
+.most_top>span>p:hover {
+    background-color: #ff3098;
 }
 
 .most_top p {
@@ -96,14 +99,15 @@ header a {
     font-weight: bold;
     line-height: 100%;
     color: #fff;
+    height: 100%;
+    padding-inline: 1%;
 }
 
 /**************************************/
 
 .logo_container {
     padding-block: 1%;
-    padding-left: 10%;
-    width: 90%;
+    padding-inline: 201.6px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -112,7 +116,7 @@ header a {
     position: relative;
 }
 
-.logo_container>a{
+.logo_container>a {
     width: 8%;
     aspect-ratio: 1/1;
 }
@@ -130,6 +134,11 @@ header a {
     font-family: Manrope;
     font-size: var(--font-16px);
     color: #374653;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
 }
 
 .logo_container>div:first-of-type>p {
@@ -144,7 +153,7 @@ header a {
     text-align: left;
 }
 
-.logo_container>div:nth-of-type(2) {
+.logo_container>div:nth-of-type(2)>a {
     font-family: Manrope;
     font-size: var(--font-16px);
     font-weight: 500;
@@ -161,15 +170,22 @@ header a {
 /**************************************/
 
 nav {
-    width: 83%;
-    display: table;
-    margin: 0 auto;
+    padding-inline: 201.6px;
 }
 
 .topmenu {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.topmenu>div {
+    margin-block: auto;
+    height: 1.5rem;
+    width: 1px;
+    opacity: 0.2;
+    background-color: #fff;
 }
 
 .topmenu>li:first-of-type {
@@ -205,7 +221,7 @@ nav {
     left: 0;
     top: 100%;
     z-index: 5;
-    width: 100%;
+    width: 250%;
     opacity: 0;
     transform: scaleY(0);
     transform-origin: 0 0;
@@ -215,7 +231,7 @@ nav {
 .submenu a {
     color: white;
     text-align: left;
-    padding: 8% 10%;
+    padding: 5% 6%;
     font-size: var(--font-16px);
     border-bottom: 1px solid rgba(255, 255, 255, .1);
 }
@@ -241,7 +257,8 @@ nav {
 
 .main_bunner p,
 .main_bunner a {
-    margin-left: 14%;
+    margin-left: 201.6px;
+    /**/
 }
 
 .main_bunner p:nth-of-type(1) {
